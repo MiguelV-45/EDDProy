@@ -49,6 +49,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algoritmos Recursivos\AR2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR2.Designer.cs">
+      <DependentUpon>AR2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR3.Designer.cs">
+      <DependentUpon>AR3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR4.Designer.cs">
+      <DependentUpon>AR4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR5.Designer.cs">
+      <DependentUpon>AR5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR6.Designer.cs">
+      <DependentUpon>AR6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR1.cs" />
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR2.cs" />
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR3.cs" />
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR4.cs" />
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR5.cs" />
+    <Compile Include="Algoritmos Recursivos\Clases\ClassAR6.cs" />
+    <Compile Include="Algoritmos Recursivos\AR1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Algoritmos Recursivos\AR1.Designer.cs">
+      <DependentUpon>AR1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
@@ -74,6 +116,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Algoritmos Recursivos\AR1.resx">
+      <DependentUpon>AR1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos Recursivos\AR2.resx">
+      <DependentUpon>AR2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos Recursivos\AR3.resx">
+      <DependentUpon>AR3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos Recursivos\AR4.resx">
+      <DependentUpon>AR4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos Recursivos\AR5.resx">
+      <DependentUpon>AR5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Algoritmos Recursivos\AR6.resx">
+      <DependentUpon>AR6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>

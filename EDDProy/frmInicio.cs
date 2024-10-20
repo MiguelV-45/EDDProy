@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Algoritmos_Recursivos.Clases;
 using EDDemo.Estructuras_No_Lineales;
 
 namespace EDDemo
@@ -46,5 +47,52 @@ namespace EDDemo
             mArboles.MdiParent = this;
             mArboles.Show();
         }
+
+        //***************** Algoritmos Recursivos ***************************//
+        private void factorialDe1NumeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR1 frm1 = new AR1(); // Crea una nueva instancia del formulario "AR1"
+            frm1.Show(); // Muestra el formulario "AR1"
+            frm1.MdiParent = this;
+        }
+
+        private void calculoDeUnExponenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR2 frm2 = new AR2();// Crea una nueva instancia del formulario "AR2"
+            frm2.Show();// Muestra el formulario "AR2"
+            frm2.MdiParent = this;
+        }
+
+        private void sumarArreglosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR3 frm3 = new AR3();// Crea una nueva instancia del formulario "AR2"
+            frm3.Show();// Muestra el formulario "AR2"
+            frm3.MdiParent = this;
+        }
+
+        private void fibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR4 frm4 = new AR4();// Crea una nueva instancia del formulario "AR2"
+            frm4.Show();// Muestra el formulario "AR2"
+            frm4.MdiParent = this;
+        }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR5 frm5 = new AR5();// Crea una nueva instancia del formulario "AR2"
+            frm5.Show();// Muestra el formulario "AR2"
+            frm5.MdiParent = this;
+        }
+
+        private void torreDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AR6 frm6 = new AR6();// Crea una nueva instancia del formulario "AR2"
+            frm6.Show();// Muestra el formulario "AR2"
+            frm6.MdiParent = this;
+        }
+
+        //******************************************************************************//
+
+
     }
 }
