@@ -23,6 +23,7 @@ namespace EDDemo.Estructuras_No_Lineales
 {
     public partial class frmArboles : Form
     {
+        // Declaración del árbol de búsqueda y su nodo raíz.
         ArbolBusqueda miArbol;
         NodoBinario miRaiz;
 
@@ -35,18 +36,18 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-
             int valor;
+            // Validación del valor introducido en txtDato.
             if (!int.TryParse(txtDato.Text, out valor))
             {
                 MessageBox.Show("Por favor, introduce un valor válido.");
                 return;
             }
 
-            // Obtenemos el nodo raíz del árbol
+            // Obtenemos el nodo raíz del árbol.
             miRaiz = miArbol.RegresaRaiz();
 
-            // Verificar si el valor ya existe en el árbol
+            // Verificamos si el valor ya existe en el árbol para evitar duplicados.
             if (miArbol.Busqueda(valor, miRaiz))
             {
                 MessageBox.Show($"El valor {valor} ya existe en el árbol. No se permiten duplicados.");
@@ -54,18 +55,17 @@ namespace EDDemo.Estructuras_No_Lineales
                 return;
             }
 
-            // Insertar el nodo ya que no es duplicado
+            // Insertamos el nodo en el árbol y actualizamos la representación visual.
             miArbol.strArbol = "";
             miArbol.InsertaNodo(valor, ref miRaiz);
             miArbol.MuestraArbolAcostado(1, miRaiz);
             txtArbol.Text = miArbol.strArbol;
             txtDato.Text = "";
-
-
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            // Reinicia el árbol y limpia los campos visuales.
             miArbol = null;
             miRaiz = null;
             miArbol = new ArbolBusqueda();
@@ -78,74 +78,67 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnGrafica_Click(object sender, EventArgs e)
         {
+            // Generación de la cadena en formato GraphViz para graficar el árbol.
             String graphVizString;
 
             miRaiz = miArbol.RegresaRaiz();
             if (miRaiz == null)
             {
-                MessageBox.Show("El arbol esta vacio");
+                MessageBox.Show("El árbol está vacío.");
                 return;
             }
 
+            // Construcción de la representación en GraphViz.
             StringBuilder b = new StringBuilder();
             b.Append("digraph G { node [shape=\"circle\"]; " + Environment.NewLine);
             b.Append(miArbol.ToDot(miRaiz));
             b.Append("}");
             graphVizString = b.ToString();
 
-            //graphVizString = @" digraph g{ label=""Graph""; labelloc=top;labeljust=left;}";
-            //graphVizString = @"digraph Arbol{Raiz->60; 60->40. 60->90; 40->34; 40->50;}";
             Bitmap bm = FileDotEngine.Run(graphVizString);
 
-
+            // Muestra la gráfica en un formulario aparte.
             frmGrafica graf = new frmGrafica();
             graf.ActualizaGrafica(bm);
             graf.MdiParent = this.MdiParent;
             graf.Show();
         }
 
-
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
-            //Recorrido en PreOrden
-            //Obtenemos el nodo Raiz del arbol
+            // Obtenemos el nodo raíz y realizamos recorrido en PreOrden.
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 
             if (miRaiz == null)
             {
-                lblRecorridoPreOrden.Text = "El arbol esta vacio";
+                lblRecorridoPreOrden.Text = "El árbol está vacío.";
                 return;
             }
             lblRecorridoPreOrden.Text = "";
             miArbol.PreOrden(miRaiz);
-
             lblRecorridoPreOrden.Text = miArbol.strRecorrido;
 
-
-            //Recorrido en InOrden
-            //Obtenemos el nodo Raiz del arbol
+            // Realizamos recorrido en InOrden.
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 
             if (miRaiz == null)
             {
-                lblRecorridoPostOrden.Text = "El arbol esta vacio";
+                lblRecorridoPostOrden.Text = "El árbol está vacío.";
                 return;
             }
             lblRecorridoInOrden.Text = "";
             miArbol.InOrden(miRaiz);
             lblRecorridoInOrden.Text = miArbol.strRecorrido;
 
-
-            //Recorrido en PostOrden
-            //Obtenemos el nodo Raiz del arbol
+            // Realizamos recorrido en PostOrden.
             miRaiz = miArbol.RegresaRaiz();
             miArbol.strRecorrido = "";
 
             if (miRaiz == null)
             {
-                lblRecorridoPostOrden.Text = "El arbol esta vacio";
+                lblRecorridoPostOrden.Text = "El árbol está vacío.";
                 return;
             }
             lblRecorridoPostOrden.Text = "";
@@ -155,7 +148,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
         {
-            // Limpiamos el árbol anterior
+            // Limpia el árbol actual y genera uno nuevo con valores aleatorios.
             miArbol = new ArbolBusqueda();
             miRaiz = null;
             txtArbol.Text = "";
@@ -167,15 +160,14 @@ namespace EDDemo.Estructuras_No_Lineales
             {
                 int dato = rnd.Next(1, 100);
 
-                // Verificar si el valor ya existe en el árbol
+                // Verificamos si el valor es único antes de insertarlo.
                 if (!miArbol.Busqueda(dato, miRaiz))
                 {
-                    // Insertar el nodo si no es duplicado
                     miArbol.InsertaNodo(dato, ref miRaiz);
                 }
             }
 
-            // Leer árbol completo y mostrarlo en caja de texto
+            // Mostramos la estructura del árbol generado en la caja de texto.
             miArbol.MuestraArbolAcostado(1, miRaiz);
             txtArbol.Text = miArbol.strArbol;
         }
@@ -183,30 +175,31 @@ namespace EDDemo.Estructuras_No_Lineales
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             int valor;
-            // Tomar el valor de txtDato y verificar si es un número válido
+            // Validación del valor introducido.
             if (!int.TryParse(txtDato.Text, out valor))
             {
                 MessageBox.Show("Por favor, introduce un valor válido.");
                 return;
             }
 
-            // Obtenemos el nodo raíz del árbol y buscamos el valor
+            // Realizamos la búsqueda del valor en el árbol.
             miRaiz = miArbol.RegresaRaiz();
             bool encontrado = miArbol.Busqueda(valor, miRaiz);
 
-            // Mostrar mensaje basado en el resultado de la búsqueda
+            // Mostramos un mensaje indicando si el valor fue encontrado o no.
             if (encontrado)
                 MessageBox.Show($"El valor {valor} SÍ se encuentra en el árbol.");
             else
                 MessageBox.Show($"El valor {valor} NO se encuentra en el árbol.");
 
-            // Limpiar el campo de texto después de buscar
+            // Limpiamos el campo de texto después de la búsqueda.
             txtDato.Text = "";
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            this.Close(); // Cierra el formulario actual
+            // Cierra el formulario actual.
+            this.Close();
         }
     }
 }
