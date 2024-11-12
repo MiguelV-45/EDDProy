@@ -36,22 +36,27 @@
             // 
             this.picGrafica.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picGrafica.Location = new System.Drawing.Point(0, 0);
+            this.picGrafica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picGrafica.Name = "picGrafica";
-            this.picGrafica.Size = new System.Drawing.Size(947, 534);
+            this.picGrafica.Size = new System.Drawing.Size(631, 342);
+            this.picGrafica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picGrafica.TabIndex = 0;
             this.picGrafica.TabStop = false;
             // 
             // frmGrafica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 534);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(631, 342);
             this.Controls.Add(this.picGrafica);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmGrafica";
             this.Text = "Grafica";
             this.Load += new System.EventHandler(this.frmGrafica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picGrafica)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
