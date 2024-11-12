@@ -405,7 +405,5 @@ namespace EDDemo.Estructuras_No_Lineales
                 nodo = null; // Elimina la referencia al nodo
             }
         }
-
-
     }
 }
