@@ -50,6 +50,7 @@ namespace EDDemo
             this.circularesSimplesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.métodosDeBúsquedaYOrdenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@ namespace EDDemo
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.algoritmosRecursivosToolStripMenuItem,
             this.estructurasLinealesToolStripMenuItem,
-            this.estructurasNoLibealesToolStripMenuItem});
+            this.estructurasNoLibealesToolStripMenuItem,
+            this.métodosDeBúsquedaYOrdenamientoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -131,7 +133,6 @@ namespace EDDemo
             this.estructurasLinealesToolStripMenuItem.Name = "estructurasLinealesToolStripMenuItem";
             this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.estructurasLinealesToolStripMenuItem.Text = "Estructuras lineales";
-            this.estructurasLinealesToolStripMenuItem.Click += new System.EventHandler(this.estructurasLinealesToolStripMenuItem_Click);
             // 
             // pilasToolStripMenuItem
             // 
@@ -139,21 +140,22 @@ namespace EDDemo
             this.estaticaToolStripMenuItem,
             this.dinamicaToolStripMenuItem});
             this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
-            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pilasToolStripMenuItem.Text = "Pilas";
-            this.pilasToolStripMenuItem.Click += new System.EventHandler(this.pilasToolStripMenuItem_Click);
             // 
             // estaticaToolStripMenuItem
             // 
             this.estaticaToolStripMenuItem.Name = "estaticaToolStripMenuItem";
-            this.estaticaToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.estaticaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.estaticaToolStripMenuItem.Text = "Estatica";
+            this.estaticaToolStripMenuItem.Click += new System.EventHandler(this.estaticaToolStripMenuItem_Click);
             // 
             // dinamicaToolStripMenuItem
             // 
             this.dinamicaToolStripMenuItem.Name = "dinamicaToolStripMenuItem";
-            this.dinamicaToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.dinamicaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dinamicaToolStripMenuItem.Text = "Dinamica";
+            this.dinamicaToolStripMenuItem.Click += new System.EventHandler(this.dinamicaToolStripMenuItem_Click);
             // 
             // colasToolStripMenuItem
             // 
@@ -161,20 +163,22 @@ namespace EDDemo
             this.simpleEstaticaToolStripMenuItem,
             this.simpleDinamicaToolStripMenuItem});
             this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
-            this.colasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colasToolStripMenuItem.Text = "Colas";
             // 
             // simpleEstaticaToolStripMenuItem
             // 
             this.simpleEstaticaToolStripMenuItem.Name = "simpleEstaticaToolStripMenuItem";
-            this.simpleEstaticaToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.simpleEstaticaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.simpleEstaticaToolStripMenuItem.Text = "Simple Estatica";
+            this.simpleEstaticaToolStripMenuItem.Click += new System.EventHandler(this.simpleEstaticaToolStripMenuItem_Click);
             // 
             // simpleDinamicaToolStripMenuItem
             // 
             this.simpleDinamicaToolStripMenuItem.Name = "simpleDinamicaToolStripMenuItem";
-            this.simpleDinamicaToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.simpleDinamicaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.simpleDinamicaToolStripMenuItem.Text = "Simple Dinamica";
+            this.simpleDinamicaToolStripMenuItem.Click += new System.EventHandler(this.simpleDinamicaToolStripMenuItem_Click);
             // 
             // listasToolStripMenuItem
             // 
@@ -183,7 +187,7 @@ namespace EDDemo
             this.doblementeEncadenadaToolStripMenuItem,
             this.circularesSimplesToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.listasToolStripMenuItem.Text = "Listas";
             // 
             // simplesToolStripMenuItem
@@ -191,18 +195,21 @@ namespace EDDemo
             this.simplesToolStripMenuItem.Name = "simplesToolStripMenuItem";
             this.simplesToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.simplesToolStripMenuItem.Text = "Simples";
+            this.simplesToolStripMenuItem.Click += new System.EventHandler(this.simplesToolStripMenuItem_Click);
             // 
             // doblementeEncadenadaToolStripMenuItem
             // 
             this.doblementeEncadenadaToolStripMenuItem.Name = "doblementeEncadenadaToolStripMenuItem";
             this.doblementeEncadenadaToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.doblementeEncadenadaToolStripMenuItem.Text = "Doblemente encadenada";
+            this.doblementeEncadenadaToolStripMenuItem.Click += new System.EventHandler(this.doblementeEncadenadaToolStripMenuItem_Click);
             // 
             // circularesSimplesToolStripMenuItem
             // 
             this.circularesSimplesToolStripMenuItem.Name = "circularesSimplesToolStripMenuItem";
             this.circularesSimplesToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.circularesSimplesToolStripMenuItem.Text = "Circulares Simples";
+            this.circularesSimplesToolStripMenuItem.Click += new System.EventHandler(this.circularesSimplesToolStripMenuItem_Click);
             // 
             // estructurasNoLibealesToolStripMenuItem
             // 
@@ -219,6 +226,12 @@ namespace EDDemo
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
+            // métodosDeBúsquedaYOrdenamientoToolStripMenuItem
+            // 
+            this.métodosDeBúsquedaYOrdenamientoToolStripMenuItem.Name = "métodosDeBúsquedaYOrdenamientoToolStripMenuItem";
+            this.métodosDeBúsquedaYOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.métodosDeBúsquedaYOrdenamientoToolStripMenuItem.Text = "Métodos de búsqueda y Ordenamiento";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,7 +243,6 @@ namespace EDDemo
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInicio";
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -260,6 +272,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem simplesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doblementeEncadenadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem circularesSimplesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem métodosDeBúsquedaYOrdenamientoToolStripMenuItem;
     }
 }
 

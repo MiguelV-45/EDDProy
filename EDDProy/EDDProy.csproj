@@ -91,9 +91,51 @@
     <Compile Include="Algoritmos Recursivos\AR1.Designer.cs">
       <DependentUpon>AR1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras Lineales\Clases\ColaSimple.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ColaSimpleEstatica.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaCircularSimple.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaDobleEncadenada.cs" />
     <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaSimple.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\NodoDoble.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
+    <Compile Include="Estructuras Lineales\frmCSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmCSD.Designer.cs">
+      <DependentUpon>frmCSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmCSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmCSE.Designer.cs">
+      <DependentUpon>frmCSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLCS.Designer.cs">
+      <DependentUpon>frmLCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLDE.Designer.cs">
+      <DependentUpon>frmLDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmLS.Designer.cs">
+      <DependentUpon>frmLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmPD.Designer.cs">
+      <DependentUpon>frmPD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
@@ -114,11 +156,11 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.cs">
+    <Compile Include="Estructuras Lineales\frmPE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
-      <DependentUpon>frmPilas.cs</DependentUpon>
+    <Compile Include="Estructuras Lineales\frmPE.Designer.cs">
+      <DependentUpon>frmPE.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
@@ -141,6 +183,27 @@
     <EmbeddedResource Include="Algoritmos Recursivos\AR6.resx">
       <DependentUpon>AR6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmCSD.resx">
+      <DependentUpon>frmCSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmCSE.resx">
+      <DependentUpon>frmCSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmLCS.resx">
+      <DependentUpon>frmLCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmLDE.resx">
+      <DependentUpon>frmLDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmLS.resx">
+      <DependentUpon>frmLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmPD.resx">
+      <DependentUpon>frmPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmPE.resx">
+      <DependentUpon>frmPE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
-      <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
