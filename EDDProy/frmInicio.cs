@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using EDDemo.Algoritmos_Recursivos.Clases;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Metodos_de_Busqueda_y_Ordenamiento;
+using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms;
 
 namespace EDDemo
 {
@@ -118,6 +120,20 @@ namespace EDDemo
             frmLCS frm7 = new frmLCS();// Crea una nueva instancia del formulario 
             frm7.Show();// Muestra el formulario 
             frm7.MdiParent = this;
+        }
+
+        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBurbuja frm = new frmBurbuja();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void quicksortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuicksort frm = new frmQuicksort();
+            frm.Show();
+            frm.MdiParent = this;
         }
     }
 }
