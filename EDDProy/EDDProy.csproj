@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +47,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EDDemo.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Graphviz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -163,19 +185,60 @@
       <DependentUpon>frmPE.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Clases\Burbuja.cs" />
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Clases\Quicksort.cs" />
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Forms\frmBurbuja.cs">
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\Intercalacion.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\MezclaDirecta.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\MezclaNatural.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Interno\Burbuja.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Interno\Quicksort.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Interno\RadixSort.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Interno\ShellSort.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmIntercalacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Forms\frmBurbuja.Designer.cs">
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmIntercalacion.Designer.cs">
+      <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaDirecta.Designer.cs">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaNatural.Designer.cs">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmRadixSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmRadixSort.Designer.cs">
+      <DependentUpon>frmRadixSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmBurbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmBurbuja.Designer.cs">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
     </Compile>
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Forms\frmQuicksort.cs">
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmQuicksort.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Metodos de Busqueda y Ordenamiento\Forms\frmQuicksort.Designer.cs">
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmQuicksort.Designer.cs">
       <DependentUpon>frmQuicksort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmShellSort.Designer.cs">
+      <DependentUpon>frmShellSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Portada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Portada.Designer.cs">
+      <DependentUpon>Portada.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -227,11 +290,29 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Forms\frmBurbuja.resx">
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmIntercalacion.resx">
+      <DependentUpon>frmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaDirecta.resx">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmMezclaNatural.resx">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmBurbuja.resx">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Forms\frmQuicksort.resx">
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmQuicksort.resx">
       <DependentUpon>frmQuicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmRadixSort.resx">
+      <DependentUpon>frmRadixSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Interno\frmShellSort.resx">
+      <DependentUpon>frmShellSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Portada.resx">
+      <DependentUpon>Portada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -358,6 +439,21 @@
     <Content Include="external\xdot.dll" />
     <Content Include="external\zlib1.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Metodos de Busqueda y Ordenamiento\Busqueda\Clases\" />
+    <Folder Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

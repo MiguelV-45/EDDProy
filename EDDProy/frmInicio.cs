@@ -11,7 +11,9 @@ using EDDemo.Algoritmos_Recursivos.Clases;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento;
+using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Clases;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms;
+using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms.Externo;
 
 namespace EDDemo
 {
@@ -22,6 +24,7 @@ namespace EDDemo
             InitializeComponent();
         }
 
+
         //************************************** Estructura no lineal ***************************//
         private void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -29,6 +32,7 @@ namespace EDDemo
             mArboles.MdiParent = this;
             mArboles.Show();
         }
+
 
         //***************** Algoritmos Recursivos ***************************//
         private void factorialDe1NumeroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +76,8 @@ namespace EDDemo
             frm6.Show();// Muestra el formulario "AR6"
             frm6.MdiParent = this;
         }
+
+
         //***************************** Estructura Lineal *************************************************//
         private void estaticaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -122,18 +128,71 @@ namespace EDDemo
             frm7.MdiParent = this;
         }
 
-        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+
+        //***************************** Boton para regresar a la portada *************************************************//
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Portada frm = new Portada();
+            frm.Show();
+            this.Hide();
+        }
+
+
+        //***************************** Metodos de Ordenacion Internos  *************************************************//
+        private void burbujaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             frmBurbuja frm = new frmBurbuja();
             frm.Show();
             frm.MdiParent = this;
         }
 
-        private void quicksortToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quicksortToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             frmQuicksort frm = new frmQuicksort();
             frm.Show();
             frm.MdiParent = this;
+        }
+
+        private void sellSortToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmShellSort frm = new frmShellSort();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void radixToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmRadixSort frm = new frmRadixSort();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+
+
+        //***************************** Metodos de Ordenacion Externos  *************************************************//
+
+        private void intercalaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIntercalacion frm = new frmIntercalacion();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void mezclaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaDirecta frm = new frmMezclaDirecta();
+            frm.Show();
+            frm.MdiParent = this;
+                
+        }
+
+        private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMezclaNatural frm = new frmMezclaNatural();
+            frm.Show();
+            frm.MdiParent = this;
+
         }
     }
 }
