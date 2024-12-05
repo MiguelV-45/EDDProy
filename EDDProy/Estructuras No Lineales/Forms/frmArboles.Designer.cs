@@ -124,13 +124,14 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Lime;
             this.btnAgregar.Location = new System.Drawing.Point(209, 42);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(83, 29);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Insertar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // txtArbol
@@ -144,42 +145,45 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
             this.txtArbol.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtArbol.Size = new System.Drawing.Size(1446, 265);
+            this.txtArbol.Size = new System.Drawing.Size(1446, 308);
             this.txtArbol.TabIndex = 2;
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.BackColor = System.Drawing.Color.Lime;
             this.btnLimpiar.Location = new System.Drawing.Point(1351, 70);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(92, 29);
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGrafica
             // 
             this.btnGrafica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGrafica.BackColor = System.Drawing.Color.Lime;
             this.btnGrafica.Location = new System.Drawing.Point(1351, 118);
             this.btnGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrafica.Name = "btnGrafica";
             this.btnGrafica.Size = new System.Drawing.Size(92, 29);
             this.btnGrafica.TabIndex = 3;
             this.btnGrafica.Text = "Grafica";
-            this.btnGrafica.UseVisualStyleBackColor = true;
+            this.btnGrafica.UseVisualStyleBackColor = false;
             this.btnGrafica.Click += new System.EventHandler(this.btnGrafica_Click);
             // 
             // btnRecorrer
             // 
+            this.btnRecorrer.BackColor = System.Drawing.Color.Lime;
             this.btnRecorrer.Location = new System.Drawing.Point(588, 56);
             this.btnRecorrer.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecorrer.Name = "btnRecorrer";
             this.btnRecorrer.Size = new System.Drawing.Size(83, 40);
             this.btnRecorrer.TabIndex = 4;
             this.btnRecorrer.Text = "Recorrer";
-            this.btnRecorrer.UseVisualStyleBackColor = true;
+            this.btnRecorrer.UseVisualStyleBackColor = false;
             this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
             // 
             // lblDatos
@@ -194,13 +198,14 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnCrearArbol
             // 
+            this.btnCrearArbol.BackColor = System.Drawing.Color.Lime;
             this.btnCrearArbol.Location = new System.Drawing.Point(588, 12);
             this.btnCrearArbol.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearArbol.Name = "btnCrearArbol";
             this.btnCrearArbol.Size = new System.Drawing.Size(83, 42);
             this.btnCrearArbol.TabIndex = 6;
             this.btnCrearArbol.Text = "Crear Arbol";
-            this.btnCrearArbol.UseVisualStyleBackColor = true;
+            this.btnCrearArbol.UseVisualStyleBackColor = false;
             this.btnCrearArbol.Click += new System.EventHandler(this.btnCrearArbol_Click);
             // 
             // txtNodos
@@ -284,12 +289,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnBuscar
             // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Lime;
             this.btnBuscar.Location = new System.Drawing.Point(302, 149);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(85, 36);
             this.btnBuscar.TabIndex = 15;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnRegresar
@@ -412,22 +418,24 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnEliminarPredecesor
             // 
+            this.btnEliminarPredecesor.BackColor = System.Drawing.Color.Lime;
             this.btnEliminarPredecesor.Location = new System.Drawing.Point(484, 175);
             this.btnEliminarPredecesor.Name = "btnEliminarPredecesor";
             this.btnEliminarPredecesor.Size = new System.Drawing.Size(168, 26);
             this.btnEliminarPredecesor.TabIndex = 27;
             this.btnEliminarPredecesor.Text = "Eliminar Predecesor";
-            this.btnEliminarPredecesor.UseVisualStyleBackColor = true;
+            this.btnEliminarPredecesor.UseVisualStyleBackColor = false;
             this.btnEliminarPredecesor.Click += new System.EventHandler(this.btnEliminarPredecesor_Click);
             // 
             // btnEliminarSucesor
             // 
+            this.btnEliminarSucesor.BackColor = System.Drawing.Color.Lime;
             this.btnEliminarSucesor.Location = new System.Drawing.Point(658, 175);
             this.btnEliminarSucesor.Name = "btnEliminarSucesor";
             this.btnEliminarSucesor.Size = new System.Drawing.Size(138, 26);
             this.btnEliminarSucesor.TabIndex = 28;
             this.btnEliminarSucesor.Text = "Eliminar Sucesor";
-            this.btnEliminarSucesor.UseVisualStyleBackColor = true;
+            this.btnEliminarSucesor.UseVisualStyleBackColor = false;
             this.btnEliminarSucesor.Click += new System.EventHandler(this.btnEliminarSucesor_Click);
             // 
             // label6
@@ -545,12 +553,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnRecorrerPorNiveles
             // 
+            this.btnRecorrerPorNiveles.BackColor = System.Drawing.Color.Lime;
             this.btnRecorrerPorNiveles.Location = new System.Drawing.Point(854, 157);
             this.btnRecorrerPorNiveles.Name = "btnRecorrerPorNiveles";
             this.btnRecorrerPorNiveles.Size = new System.Drawing.Size(173, 32);
             this.btnRecorrerPorNiveles.TabIndex = 42;
             this.btnRecorrerPorNiveles.Text = "Recorrer por niveles";
-            this.btnRecorrerPorNiveles.UseVisualStyleBackColor = true;
+            this.btnRecorrerPorNiveles.UseVisualStyleBackColor = false;
             this.btnRecorrerPorNiveles.Click += new System.EventHandler(this.btnRecorrerPorNiveles_Click);
             // 
             // lblRecorridoNiveles
@@ -591,12 +600,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnAltura
             // 
+            this.btnAltura.BackColor = System.Drawing.Color.Lime;
             this.btnAltura.Location = new System.Drawing.Point(29, 283);
             this.btnAltura.Name = "btnAltura";
             this.btnAltura.Size = new System.Drawing.Size(119, 32);
             this.btnAltura.TabIndex = 47;
             this.btnAltura.Text = "Altura del arbol";
-            this.btnAltura.UseVisualStyleBackColor = true;
+            this.btnAltura.UseVisualStyleBackColor = false;
             this.btnAltura.Click += new System.EventHandler(this.btnAltura_Click);
             // 
             // label19
@@ -687,12 +697,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnContarHojas
             // 
+            this.btnContarHojas.BackColor = System.Drawing.Color.Lime;
             this.btnContarHojas.Location = new System.Drawing.Point(413, 283);
             this.btnContarHojas.Name = "btnContarHojas";
             this.btnContarHojas.Size = new System.Drawing.Size(134, 31);
             this.btnContarHojas.TabIndex = 57;
             this.btnContarHojas.Text = "Contar Hojas";
-            this.btnContarHojas.UseVisualStyleBackColor = true;
+            this.btnContarHojas.UseVisualStyleBackColor = false;
             this.btnContarHojas.Click += new System.EventHandler(this.btnContarHojas_Click);
             // 
             // label26
@@ -753,12 +764,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnContarNodos
             // 
+            this.btnContarNodos.BackColor = System.Drawing.Color.Lime;
             this.btnContarNodos.Location = new System.Drawing.Point(793, 283);
             this.btnContarNodos.Name = "btnContarNodos";
             this.btnContarNodos.Size = new System.Drawing.Size(125, 31);
             this.btnContarNodos.TabIndex = 64;
             this.btnContarNodos.Text = "Contar nodos";
-            this.btnContarNodos.UseVisualStyleBackColor = true;
+            this.btnContarNodos.UseVisualStyleBackColor = false;
             this.btnContarNodos.Click += new System.EventHandler(this.btnContarNodos_Click);
             // 
             // label30
@@ -809,12 +821,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnVerificarCompleto
             // 
+            this.btnVerificarCompleto.BackColor = System.Drawing.Color.Lime;
             this.btnVerificarCompleto.Location = new System.Drawing.Point(29, 388);
             this.btnVerificarCompleto.Name = "btnVerificarCompleto";
             this.btnVerificarCompleto.Size = new System.Drawing.Size(129, 26);
             this.btnVerificarCompleto.TabIndex = 70;
             this.btnVerificarCompleto.Text = "Verificar Arbol";
-            this.btnVerificarCompleto.UseVisualStyleBackColor = true;
+            this.btnVerificarCompleto.UseVisualStyleBackColor = false;
             this.btnVerificarCompleto.Click += new System.EventHandler(this.btnVerificarCompleto_Click);
             // 
             // lblResultadoCompleto
@@ -865,12 +878,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnVerificarLleno
             // 
+            this.btnVerificarLleno.BackColor = System.Drawing.Color.Lime;
             this.btnVerificarLleno.Location = new System.Drawing.Point(543, 386);
             this.btnVerificarLleno.Name = "btnVerificarLleno";
             this.btnVerificarLleno.Size = new System.Drawing.Size(128, 28);
             this.btnVerificarLleno.TabIndex = 76;
             this.btnVerificarLleno.Text = "Verificar arbol ";
-            this.btnVerificarLleno.UseVisualStyleBackColor = true;
+            this.btnVerificarLleno.UseVisualStyleBackColor = false;
             this.btnVerificarLleno.Click += new System.EventHandler(this.btnVerificarLleno_Click);
             // 
             // label36
@@ -895,7 +909,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 716);
+            this.ClientSize = new System.Drawing.Size(1454, 759);
             this.Controls.Add(this.lblResultadoLleno);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.btnVerificarLleno);

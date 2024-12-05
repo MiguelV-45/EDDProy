@@ -185,6 +185,27 @@
       <DependentUpon>frmPE.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Clases\BusquedaBinaria.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Clases\BusquedaSecuencial.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Clases\FuncionesHash.cs" />
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaBinaria.Designer.cs">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaHashing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaHashing.Designer.cs">
+      <DependentUpon>frmBusquedaHashing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaSecuencial.Designer.cs">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\Intercalacion.cs" />
     <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\MezclaDirecta.cs" />
     <Compile Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Clases\Externo\MezclaNatural.cs" />
@@ -289,6 +310,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaBinaria.resx">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaHashing.resx">
+      <DependentUpon>frmBusquedaHashing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\frmBusquedaSecuencial.resx">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Busqueda y Ordenamiento\Ordenamiento\Forms\Externo\frmIntercalacion.resx">
       <DependentUpon>frmIntercalacion.cs</DependentUpon>
@@ -439,10 +469,7 @@
     <Content Include="external\xdot.dll" />
     <Content Include="external\zlib1.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Metodos de Busqueda y Ordenamiento\Busqueda\Clases\" />
-    <Folder Include="Metodos de Busqueda y Ordenamiento\Busqueda\Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>

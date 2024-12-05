@@ -264,20 +264,23 @@ namespace EDDemo
             // busqueToolStripMenuItem
             // 
             this.busqueToolStripMenuItem.Name = "busqueToolStripMenuItem";
-            this.busqueToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.busqueToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.busqueToolStripMenuItem.Text = "Búsqueda Secuencial";
+            this.busqueToolStripMenuItem.Click += new System.EventHandler(this.busqueToolStripMenuItem_Click);
             // 
             // búsquedaBinariaToolStripMenuItem
             // 
             this.búsquedaBinariaToolStripMenuItem.Name = "búsquedaBinariaToolStripMenuItem";
-            this.búsquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.búsquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.búsquedaBinariaToolStripMenuItem.Text = "Búsqueda Binaria";
+            this.búsquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.búsquedaBinariaToolStripMenuItem_Click);
             // 
             // búsquedaHashingToolStripMenuItem
             // 
             this.búsquedaHashingToolStripMenuItem.Name = "búsquedaHashingToolStripMenuItem";
-            this.búsquedaHashingToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.búsquedaHashingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.búsquedaHashingToolStripMenuItem.Text = "Búsqueda Hashing";
+            this.búsquedaHashingToolStripMenuItem.Click += new System.EventHandler(this.búsquedaHashingToolStripMenuItem_Click);
             // 
             // métodosDeBúsquedaToolStripMenuItem
             // 
@@ -296,7 +299,7 @@ namespace EDDemo
             this.sellSortToolStripMenuItem,
             this.radixToolStripMenuItem});
             this.métodosInternosToolStripMenuItem.Name = "métodosInternosToolStripMenuItem";
-            this.métodosInternosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.métodosInternosToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.métodosInternosToolStripMenuItem.Text = "Métodos Internos";
             // 
             // burbujaToolStripMenuItem
@@ -334,27 +337,27 @@ namespace EDDemo
             this.mezclaDirectaToolStripMenuItem,
             this.mezclaNaturalToolStripMenuItem});
             this.métodosExternosToolStripMenuItem.Name = "métodosExternosToolStripMenuItem";
-            this.métodosExternosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.métodosExternosToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.métodosExternosToolStripMenuItem.Text = "Métodos Externos";
             // 
             // intercalaciónToolStripMenuItem
             // 
             this.intercalaciónToolStripMenuItem.Name = "intercalaciónToolStripMenuItem";
-            this.intercalaciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.intercalaciónToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
             this.intercalaciónToolStripMenuItem.Text = "Intercalación";
             this.intercalaciónToolStripMenuItem.Click += new System.EventHandler(this.intercalaciónToolStripMenuItem_Click);
             // 
             // mezclaDirectaToolStripMenuItem
             // 
             this.mezclaDirectaToolStripMenuItem.Name = "mezclaDirectaToolStripMenuItem";
-            this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
             this.mezclaDirectaToolStripMenuItem.Text = "Mezcla Directa";
             this.mezclaDirectaToolStripMenuItem.Click += new System.EventHandler(this.mezclaDirectaToolStripMenuItem_Click);
             // 
             // mezclaNaturalToolStripMenuItem
             // 
             this.mezclaNaturalToolStripMenuItem.Name = "mezclaNaturalToolStripMenuItem";
-            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
             this.mezclaNaturalToolStripMenuItem.Text = "Mezcla Natural";
             this.mezclaNaturalToolStripMenuItem.Click += new System.EventHandler(this.mezclaNaturalToolStripMenuItem_Click);
             // 

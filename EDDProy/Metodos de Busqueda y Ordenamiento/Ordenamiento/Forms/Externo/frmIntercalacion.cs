@@ -66,16 +66,6 @@ namespace EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms.Externo
         {
             lstResultados.Items.Clear();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstResultados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 } 
 

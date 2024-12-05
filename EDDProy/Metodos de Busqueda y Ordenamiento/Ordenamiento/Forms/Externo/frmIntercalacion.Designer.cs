@@ -100,7 +100,6 @@
             this.lstResultados.Name = "lstResultados";
             this.lstResultados.Size = new System.Drawing.Size(120, 276);
             this.lstResultados.TabIndex = 44;
-            this.lstResultados.SelectedIndexChanged += new System.EventHandler(this.lstResultados_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -110,7 +109,6 @@
             this.label3.Size = new System.Drawing.Size(167, 16);
             this.label3.TabIndex = 45;
             this.label3.Text = "Resultado del intercalado :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnLimpiar
             // 

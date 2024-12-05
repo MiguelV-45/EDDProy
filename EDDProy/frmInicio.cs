@@ -11,6 +11,7 @@ using EDDemo.Algoritmos_Recursivos.Clases;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento;
+using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Busqueda.Forms;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Clases;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms;
 using EDDemo.Metodos_de_Busqueda_y_Ordenamiento.Forms.Externo;
@@ -193,6 +194,33 @@ namespace EDDemo
             frm.Show();
             frm.MdiParent = this;
 
+        }
+
+
+
+
+        //***************************** Metodos de Busqueda *************************************************//
+
+        private void busqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaSecuencial frm = new frmBusquedaSecuencial();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+
+        private void búsquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaBinaria frm = new frmBusquedaBinaria();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void búsquedaHashingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaHashing frm = new frmBusquedaHashing();
+            frm.Show();
+            frm.MdiParent = this;
         }
     }
 }

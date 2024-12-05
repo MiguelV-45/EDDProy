@@ -81,22 +81,24 @@
             // 
             // btnBorrar
             // 
+            this.btnBorrar.BackColor = System.Drawing.Color.Lime;
             this.btnBorrar.Location = new System.Drawing.Point(392, 324);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 22;
             this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Lime;
             this.btnCalcular.Location = new System.Drawing.Point(219, 324);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 21;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label6
